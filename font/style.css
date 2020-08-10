@@ -1,0 +1,19 @@
+
+
+h1 {
+    color : tan;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    color : grey;
+    font-size: 24px;
+}
+
+img {
+    width : 200px;
+}
+
+@font-face{
+    font-family: "Oswald";
+}
