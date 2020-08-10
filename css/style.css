@@ -2,18 +2,29 @@
 
 h1 {
     color : tan;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "oswald";
+    text-align: center;
 }
 
 p {
     color : grey;
     font-size: 24px;
+    font-family: 'Antic Slab', serif;
+    text-align: justify;
+    text-transform: capitalize;
+    line-height: 30px;
 }
 
 img {
     width : 200px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 
 @font-face{
-    font-family: "Oswald";
+    font-family: "oswald";
+    src: url("../font/Oswald/static/Oswald-Light.ttf");
+}
+
+html {
+    text-transform: uppercase;
 }
