@@ -1,73 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<div id="erriting" onclick="standi();">
+
+<div id="ide" onmouseover="epilepszia();" class="zoom"></div>
+<div id="oda" onmouseover="epilepszia();" class="zoom"></div>
+<div id="amoda" onmouseover="epilepszia();" class="zoom"></div>
+<div id="iide" onmouseover="epilepszia();" class="zoom"></div>
+<div id="ooda" onmouseover="epilepszia();" class="zoom"></div>
+<div id="ide1" onmouseover="epilepszia();" class="zoom"></div>
+<div id="oda1" onmouseover="epilepszia();" class="zoom"></div>
+<div id="amoda1" onmouseover="epilepszia();" class="zoom"></div>
+<div id="iide1" onmouseover="epilepszia();" class="zoom"></div>
+<div id="ooda1" onmouseover="epilepszia();" class="zoom"></div>
+<div id="ide2" onmouseover="epilepszia();" class="zoom"></div>
+<div id="oda2" onmouseover="epilepszia();" class="zoom"></div>
+<div id="amoda2" onmouseover="epilepszia();" class="zoom"></div>
+<div id="iide2" onmouseover="epilepszia();" class="zoom"></div>
+<div id="ooda2" onmouseover="epilepszia();" class="zoom"></div>
+
+</div>
+
+<script>
+    function epilepszia(x) {
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    ide.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    oda.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    amoda.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    iide.style.backgroundColor ="#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    ooda.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    ide1.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    oda1.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    amoda1.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    iide1.style.backgroundColor ="#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    ooda1.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    ide2.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    oda2.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    amoda2.style.backgroundColor = "#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    iide2.style.backgroundColor ="#" + randomColor;
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    ooda2.style.backgroundColor = "#" + randomColor;
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            
-        </div>
-    </nav>
+    setTimeout(epilepszia, 250);
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                One of three columns
-            </div>
-            <div class="col-sm">
-                One of three columns
-            </div>
-            <div class="col-sm">
-                One of three columns
-            </div>
-            <div class="col-sm">
-                One of three columns
-            </div>
-            <div class="col-sm">
-                One of three columns
-            </div>
-        </div>
-    </div>
+
+}
+    function standi(x) {
+    erriting.style.backgroundColor = "blue";
+    ide.style.backgroundColor = "green";
+    oda.style.backgroundColor = "green";
+    amoda.style.backgroundColor = "green";
+    iide.style.backgroundColor = "green";
+    ooda.style.backgroundColor = "green";
+    ide1.style.backgroundColor = "green";
+    oda1.style.backgroundColor = "green";
+    amoda1.style.backgroundColor = "green";
+    iide1.style.backgroundColor = "green";
+    ooda1.style.backgroundColor = "green";
+    ide2.style.backgroundColor = "green";
+    oda2.style.backgroundColor = "green";
+    amoda2.style.backgroundColor = "green";
+    iide2.style.backgroundColor = "green";
+    ooda2.style.backgroundColor = "green";
+
+}
+</script>
 
 
 </body>
-
 </html>

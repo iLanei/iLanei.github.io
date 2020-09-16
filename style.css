@@ -1,0 +1,25 @@
+
+body{
+    box-sizing: border-box;
+    background-color: blue;
+    font-size: 25px;
+}
+
+.zoom {
+    padding: 50px;
+    display: inline-block;
+    align-content: center;
+    margin: auto;
+    background-color: green;
+    transition: transform .1s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.7); /* IE 9 */
+    -webkit-transform: scale(1.7); /* Safari 3-8 */
+    transform: scale(1.7); 
+
+  }
