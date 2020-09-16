@@ -2,6 +2,10 @@ label{
     text-transform: capitalize;
 }
 
+.nav-item:hover{
+    color: blue;
+}
+
 .login-div {
     padding: 15px;
     border: solid 1px gray;
@@ -69,7 +73,7 @@ html {
 
 .futter {
     margin: 2px;
-    color: rgb(68, 68, 28)
+    color: rgb(68, 68, 28);
     font-weight: bold;
 }
 .img-div{
