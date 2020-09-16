@@ -8,60 +8,23 @@
 <div id="erriting" onclick="standi();">
 
 <div id="ide" onmouseover="epilepszia();" class="zoom"></div>
-<div id="oda" onmouseover="epilepszia();" class="zoom"></div>
-<div id="amoda" onmouseover="epilepszia();" class="zoom"></div>
-<div id="iide" onmouseover="epilepszia();" class="zoom"></div>
-<div id="ooda" onmouseover="epilepszia();" class="zoom"></div>
-<div id="ide1" onmouseover="epilepszia();" class="zoom"></div>
-<div id="oda1" onmouseover="epilepszia();" class="zoom"></div>
-<div id="amoda1" onmouseover="epilepszia();" class="zoom"></div>
-<div id="iide1" onmouseover="epilepszia();" class="zoom"></div>
-<div id="ooda1" onmouseover="epilepszia();" class="zoom"></div>
-<div id="ide2" onmouseover="epilepszia();" class="zoom"></div>
-<div id="oda2" onmouseover="epilepszia();" class="zoom"></div>
-<div id="amoda2" onmouseover="epilepszia();" class="zoom"></div>
-<div id="iide2" onmouseover="epilepszia();" class="zoom"></div>
-<div id="ooda2" onmouseover="epilepszia();" class="zoom"></div>
 
 </div>
 
 <script>
     function epilepszia(x) {
-
-
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    ide.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    oda.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    amoda.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    iide.style.backgroundColor ="#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    ooda.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    ide1.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    oda1.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    amoda1.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    iide1.style.backgroundColor ="#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    ooda1.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    ide2.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    oda2.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    amoda2.style.backgroundColor = "#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    iide2.style.backgroundColor ="#" + randomColor;
-    randomColor = Math.floor(Math.random()*16777215).toString(16);
-    ooda2.style.backgroundColor = "#" + randomColor;
-
-    setTimeout(epilepszia, 250);
-
+        var boxElement = document.getElementById('ide');
+        var boxLeftPos = boxElement.offsetLeft,
+            boxRightPos = boxLeftPos + boxElement.offsetWidth;
+            if (boxRightPos > document.body.offsetWidth) {
+                direction = -1;
+            }
+            // When left side of the box goes too far - change direction:
+            if (boxLeftPos < 0) {
+                direction = 1;
+            }
+            // Recalculate position:
+            boxElement.style.left = (boxLeftPos + speed * direction) + 'px';
 
 }
     function standi(x) {
