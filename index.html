@@ -5,46 +5,33 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="erriting" onclick="standi();">
-
-<div id="ide" onmouseover="epilepszia();" class="zoom"></div>
+<div id="ide" class="zoom"></div>
 
 </div>
 
 <script>
-    function epilepszia(x) {
-        var boxElement = document.getElementById('ide');
-        var boxLeftPos = boxElement.offsetLeft,
-            boxRightPos = boxLeftPos + boxElement.offsetWidth;
-            if (boxRightPos > document.body.offsetWidth) {
-                direction = -1;
-            }
-            // When left side of the box goes too far - change direction:
-            if (boxLeftPos < 0) {
-                direction = 1;
-            }
-            // Recalculate position:
-            boxElement.style.left = (boxLeftPos + speed * direction) + 'px';
+    window.addEventListener('load', function () ){
+        // ... the code goes here
 
-}
-    function standi(x) {
-    erriting.style.backgroundColor = "blue";
-    ide.style.backgroundColor = "green";
-    oda.style.backgroundColor = "green";
-    amoda.style.backgroundColor = "green";
-    iide.style.backgroundColor = "green";
-    ooda.style.backgroundColor = "green";
-    ide1.style.backgroundColor = "green";
-    oda1.style.backgroundColor = "green";
-    amoda1.style.backgroundColor = "green";
-    iide1.style.backgroundColor = "green";
-    ooda1.style.backgroundColor = "green";
-    ide2.style.backgroundColor = "green";
-    oda2.style.backgroundColor = "green";
-    amoda2.style.backgroundColor = "green";
-    iide2.style.backgroundColor = "green";
-    ooda2.style.backgroundColor = "green";
+        var boxElement = document.getElementById('theIdOfTheBox');
 
+        if (boxElement) {
+            boxElement.addEventListener('mouseover', function () ){
+                // Calculate and store some of the box coordinates:
+                var boxLeftPos = boxElement.offsetLeft,
+                    boxRightPos = boxLeftPos + boxElement.offsetWidth;
+                // When right side of the box goes too far - change direction:
+                if (boxRightPos > document.body.offsetWidth) {
+                    direction = -1;
+                }
+                // When left side of the box goes too far - change direction:
+                if (boxLeftPos < 0) {
+                    direction = 1;
+                }
+                // Recalculate position:
+                boxElement.style.left = (boxLeftPos + speed * direction) + 'px';
+            });
+        }
 }
 </script>
 
